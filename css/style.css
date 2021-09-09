@@ -501,40 +501,28 @@ img{
     background-color: var(--first-color);
 }
 
+/*Frontend developer*/
 .skills__html{
-    width:90%;
+    width:80%;
 }
 .skills__css{
-    width:80%;
+    width:70%;
 }
 .skills__js{
     width:60%;
 }
-.skills__react{
-    width:85%;
+.skills__vuejs{
+    width:25%;
 }
 
-.skills__php{
-    width:80%;
-}
-.skills__node{
-    width:70%;
-}
-.skills__firebase{
-    width:90%;
-}
-.skills__python{
-    width:55%;
+/*Backend developer*/
+.skills__nodejs{
+    width:0%;
 }
 
+/*Designer*/
 .skills__figma{
-    width:90%;
-}
-.skills__sketch{
-    width:85%;
-}
-.skills__photoshop{
-    width:85%;
+    width:10%;
 }
 
 .skills__close .skills__list{
