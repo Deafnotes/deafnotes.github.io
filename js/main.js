@@ -46,26 +46,7 @@ function toggleSkills (){
 
 skillsHeader.forEach((el) =>{
     el.addEventListener("click", toggleSkills)
-})
-/*==================== QUALIFICATION TABS ====================*/
-const tabContents = document.querySelectorAll("[data-content]"),
-             tabs = document.querySelectorAll("[data-target]")
-
-tabs.forEach(tab =>{
-    tab.addEventListener("click", () =>{
-        const target = document.querySelector(tab.dataset.target)
-
-        tabContents.forEach(tabContent =>{
-            tabContent.classList.remove("qualification__active")
-        })
-        target.classList.add("qualification__active")
-
-        tab.forEach(tab =>{
-            tab.classList.remove("qualification__active")
-        })
-        tab.classList.add("qualification__active")
-    })
-})             
+})            
 
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll(".services__modal"),
@@ -104,24 +85,6 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
     },
     mousewheel: true,
     keyboard: true,
-  })
-
-/*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper(".testimonial__container", {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets:true,
-    },
-    breakpoints:{
-        568:{
-            slidesPerView: 2,
-        }
-    }
   })
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
